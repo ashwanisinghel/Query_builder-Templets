@@ -16,8 +16,10 @@ function initListioners(){
     btnJoin.addEventListener('click',btnJoinCli);
 
     btnSort.addEventListener('click',onbtnClmClick);
+    btnSort.addEventListener('click',btnSortCli);
 
     btnLimit.addEventListener('click',onbtnClmClick);
+    btnLimit.addEventListener('click',btnLimitCli);
 }
 
 function onbtnClmClick(btn){
@@ -149,6 +151,44 @@ function btnJoinCli(){
     col2.appendChild(table2field);
     col2.appendChild(joinType);
     col2.appendChild(addJoin);
+}
+
+function btnSortCli(){
+    let orderBy=document.createElement('select');
+    orderBy.classList.add('sortCol2');
+    orderBy.id='orderBy'
+        let orderByOp1=document.createElement('option')
+        orderByOp1.innerHTML='Order By'
+    orderBy.appendChild(orderByOp1);
+
+    let ascdesc = document.createElement('select');
+    ascdesc.classList.add('sortCol2');
+    ascdesc.id='acsdesc';
+        let ascdescOp1 = document.createElement('option');
+        ascdescOp1.innerHTML = 'ASC/DESC';
+    ascdesc.appendChild(ascdescOp1);
+
+    let addSort= document.createElement('button');
+    addSort.classList.add('sortCol2');
+    addSort.id='addSort';
+    addSort.innerHTML='Add';
+
+    col2.append(orderBy);
+    col2.append(ascdesc);
+    col2.append(addSort);
+}
+
+function btnLimitCli(){
+    let limit= document.createElement('select');
+    limit.classList.add('limitCol2');
+    limit.add='limit';
+    
+        let limitOp1 = document.createElement('option');
+        limitOp1.innerHTML='Limit';
+
+    limit.appendChild(limitOp1);
+
+    col2.appendChild(limit);
 }
 
 initListioners();
