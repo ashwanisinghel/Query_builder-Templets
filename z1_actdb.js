@@ -4,6 +4,9 @@ let btnJoin= document.querySelector('#btnJoin');
 let btnSort= document.querySelector('#btnSort');
 let btnLimit= document.querySelector('#btnLimit');
 let col2=document.querySelector('#column2');
+let col1= document.querySelector('#column1');
+
+
 
 function initListioners(){
     btnClm.addEventListener('click',onbtnClmClick);
@@ -22,10 +25,12 @@ function initListioners(){
     btnLimit.addEventListener('click',btnLimitCli);
 }
 
+
+
 function onbtnClmClick(btn){
     col2.innerHTML='';
     bringBackColur();
-    btn.currentTarget.style.background='#004da8';
+    btn.currentTarget.style.background='#0574bb';
     btn.currentTarget.style.color='white';
 }
 
@@ -33,7 +38,7 @@ function onbtnClmClick(btn){
 function bringBackColur(){
     let col1bt = document.querySelectorAll(".col1bt");
     Array.from(col1bt).forEach((el)=>{
-        el.style.background='rgb(255, 255, 255, 0.5)';
+        el.style.background='#f4f4f4';
         el.style.color='rgb(73, 73,73)';
     });
 }

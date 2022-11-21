@@ -12,11 +12,12 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+
 .outerBox{
     height: 100vh;
     width: 100vw;
     min-width: 940px;
-    background: linear-gradient(to top left, rgb(152, 197, 249),rgb(244, 213, 241));
+    background: white;
     overflow: hidden scroll;
 }
 
@@ -25,30 +26,40 @@ body{
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 2px 5px  rgb(97 , 128 , 168);
+    /* box-shadow: 1px 1px 1px  rgb(97 , 128 , 168); */
     padding:0 30px 0 20px;
     height: 70px;
     width: 100vw;
-    background: rgb(255, 255, 255, 0.5);
+    background: #0574bb;
     margin: 0 auto;
-    border-radius: 0 0px 10px 10px;
+    /* border-radius: 0 0px 10px 10px; */
+    border: 1px solid black;
     position: sticky;
     top: 0;
 }
 .logo img{
-    height: 60px;
+    height: 40px;
 }
 
 .connectToDb a{
-    background: #004da8;
-    color: white;
+    display: flex;
+    height: 35px;
+    background: #f4f4f4;
+    color: black;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
+    align-items: center;
+    align-items: center;
 }
-.connectToDb a:hover{
+/* .connectToDb a:hover{
     background: linear-gradient(to top left, rgb(62, 88, 118),rgb(122, 76, 118));
     
+} */
+.connectToDb a img{
+    width: 30px;
+    height: 19px;
+    color: white;
 }
 
 .bodyInside{
@@ -63,8 +74,9 @@ body{
     height: 85vh;
     width: 32.5vw;
     min-width: 300px;
-    box-shadow: 2px 2px 5px  rgb(97, 128, 168);
-    border-radius: 10px;
+    /* box-shadow: 2px 2px 5px  rgb(97, 128, 168); */
+    border: 1px solid grey;
+    /* border-radius: 10px; */
     overflow: hidden scroll;
 }
 
@@ -98,25 +110,25 @@ body{
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 2vh;
-    border: none;
+    border: 1px solid grey;
     border-radius: 5px;
-    background:rgb(255, 255, 255, 0.5) ;
-    box-shadow: 0px 0px 2px  rgb(97, 128, 168);
+    background: #f4f4f4; ;
+    /* box-shadow: 2px 2px 5px  #d2d2d2; */
 }
 .col1bt{
     margin-top: 3.6vh;
     padding: 1.7vh;
     width:23vw ;
     font-size: 1rem;
-    background:rgb(255, 255, 255, 0.5);
+    background: #f4f4f4;;
     color:rgb(73, 73,73);
-    box-shadow: 2px 2px 5px  rgb(107, 114, 122);
-    border: none;
+    /* box-shadow: 2px 2px 5px  rgb(107, 114, 122); */
+    border: 1px solid grey;
     border-radius: 5px;
 }
 
 .col1bt:hover{
-    background: #004da8;
+    background: #0574bb;
     color: white;
     cursor: pointer;
     box-shadow: 2px 2px 10px  rgb(97 , 128 , 168);
@@ -128,6 +140,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#column2 input {
+    border: 1px solid gray;
 }
 
 #multiSelCol{
@@ -153,13 +169,13 @@ body{
 #filterSubmit{
     width: 10vw;
     border: none;
-    background: #004da8;
+    background: #0574bb;
     border-radius: 7px;
     color: white;
 }
 
 #filterSubmit:hover{
-    background: linear-gradient(to top left, rgb(62, 88, 118),rgb(122, 76, 118));
+    background: #065e95;
     cursor: pointer;
 }
 
@@ -183,13 +199,13 @@ body{
 #addJoin{
     width: 10vw;
     border: none;
-    background: #004da8;
+    background: #0574bb;
     border-radius: 7px;
     color: white;
 }
 
 #addJoin:hover{
-    background: linear-gradient(to top left, rgb(62, 88, 118),rgb(122, 76, 118));
+    background: #065e95;
     cursor: pointer;
 }
 
@@ -205,13 +221,13 @@ body{
 #addSort{
     width: 10vw;
     border: none;
-    background: #004da8;
+    background: #0574bb;
     border-radius: 7px;
     color: white;
 }
 
 #addSort:hover{
-    background: linear-gradient(to top left, rgb(62, 88, 118),rgb(122, 76, 118));
+    background: #065e95;
     cursor: pointer;
 }
 
@@ -239,20 +255,21 @@ body{
     margin-bottom: 15px;
     border-radius: 7px;
     background:rgba(255, 255, 255, 0.5);
-    box-shadow: 2px 2px 10px  rgb(97, 128, 168);
+    /* box-shadow: 2px 2px 10px  rgb(97, 128, 168); */
+    border: 1px solid gray;
 }
 #execute{
     margin-top: 15px;
-    background: #004da8;
+    background: #0574bb;
     color: white;
     padding: 10px;
-    box-shadow: 2px 2px 10px  rgb(97, 128, 168);
+    /* box-shadow: 2px 2px 10px  rgb(97, 128, 168); */
     width: 100px;
     border-radius: 7px;
     border: none;
 }
 #execute:hover{
     color: white;
-    background: linear-gradient(to top left, rgb(62, 88, 118),rgb(122, 76, 118));
+    background: #065e95;
     cursor: pointer;
 }
